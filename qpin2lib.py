@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# Generate KiCAD Symbol library from Quartus Pin Assignments for Intel (Altera) FPGAs
+# To use run like: qpin2lib.py output_files/my_project.pin >my_library.lib 
+# TODO: Add pin sorting options
+# TODO: Add map of part numbers to package footprints
+#       and add footprint annotations
+# TODO: (longterm) make less janky schematic editor for pcbnew
+# TODO: (Help wanted) make more pythonic (idiomatic)
+# 
+
 import sys
 from itertools import filterfalse
 filename = sys.argv[1];
