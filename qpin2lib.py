@@ -59,7 +59,7 @@ class Bank:
         for p in self.pins:
             pwidth = len(p.signalName) * 50
             if pwidth + 100 > self.width:
-                self.width = int(pwidth + 100)
+                self.width = int(pwidth/100)*100 + 100
 def getBank(name):
     if (name in banks):
         return banks[name]
